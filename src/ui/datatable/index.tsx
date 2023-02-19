@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/solid";
 
+//Test comments
 export default function DataTable({ rows = [] }) {
     const columns = Object.keys(rows[0]);
     // columns => console.log(columns);
