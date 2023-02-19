@@ -72,7 +72,7 @@ export default function DataTable({ rows = [] }) {
                     ))}
                 </tr>
                 {sortFilter(rows)
-                    .slice(0,15)
+                    .slice(0,count)
                     .map((row) => (
                         <tr>
                             {columns.map((column) => (
