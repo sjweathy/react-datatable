@@ -4,17 +4,17 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
-// let users: any;
+let users: any;
 
 import people from "@/data/people.json";
 import DataTable from "@/ui/datatable";
 
-// fetch("https://jsonplaceholder.typicode.com/users")
-//     .then((response) => response.json())
-//     .then((data) => {
-//         users = data;
-//     })
-//     .then((users) => console.log(users));
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response) => response.json())
+    .then((data) => {
+        users = data;
+    })
+    .then((users) => console.log(users));
 
 export default function Home() {
     return (
